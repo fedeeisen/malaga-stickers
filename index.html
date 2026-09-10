@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Málaga Stickers — Elige tu colección</title>
+<link rel="icon" type="image/png" href="assets/brand/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF3E3;
+    --paper-dim:#F3E8D2;
+    --ink:#24211D;
+    --ink-soft:#5B5548;
+    --sea:#1E6E8C;
+    --sea-dark:#154F65;
+    --ochre:#E2A63B;
+    --terracotta:#C24632;
+    --olive:#6B7C4B;
+    --white:#FFFDF8;
+    --shadow: 0 8px 20px -8px rgba(36,33,29,0.35);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    margin:0;
+    color:var(--ink);
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;cursor:pointer;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:40;
+    background:var(--paper);
+    border-bottom:2px solid var(--ink);
+  }
+  .header-inner{
+    max-width:1180px;
+    margin:0 auto;
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .brand-logo{
+    height:40px;
+    width:auto;
+    display:block;
+  }
+  .brand-sub{
+    font-size:0.72rem;
+    letter-spacing:0.02em;
+    color:var(--ink-soft);
+    display:none;
+  }
+  @media (min-width:560px){
+    .brand-sub{ display:inline; }
+  }
+  .cart-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--ink);
+    color:var(--paper);
+    border:none;
+    border-radius:100px;
+    padding:10px 18px 10px 14px;
+    font-weight:600;
+    font-size:0.92rem;
+    box-shadow:var(--shadow);
+    transition:transform .15s ease;
+  }
+  .cart-btn:hover{transform:translateY(-2px);}
+  .cart-count{
+    background:var(--ochre);
+    color:var(--ink);
+    border-radius:100px;
+    min-width:22px;
+    height:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:0.78rem;
+    font-weight:700;
+    padding:0 6px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    max-width:1180px;
+    margin:0 auto;
+    padding:56px 24px 36px;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:40px;
+    align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.2rem, 4vw, 3.2rem);
+    line-height:1.06;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--terracotta);
+  }
+  .hero p{
+    margin-top:18px;
+    max-width:46ch;
+    color:var(--ink-soft);
+    font-size:1.05rem;
+    line-height:1.6;
+  }
+  .hero-cta{
+    margin-top:26px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--ochre);
+    color:var(--ink);
+    border:2px solid var(--ink);
+    border-radius:100px;
+    padding:13px 24px;
+    font-weight:700;
+    font-size:0.98rem;
+    text-decoration:none;
+    box-shadow:4px 4px 0 var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .hero-cta:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+
+  .hero-sheet{
+    position:relative;
+    aspect-ratio:1/1;
+    max-width:340px;
+    margin:0 auto;
+  }
+  .float-stk{
+    position:absolute;
+    width:38%;
+    filter:drop-shadow(0 10px 14px rgba(36,33,29,.28));
+  }
+  .float-stk img{
+    width:100%;
+    border-radius:14px;
+    border:5px solid var(--white);
+    outline:2px solid var(--ink);
+    background:var(--white);
+  }
+
+  /* ---------- SEARCH + TABS ---------- */
+  .toolbar{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  .search-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .search-box{
+    flex:1;
+    min-width:220px;
+    position:relative;
+  }
+  .search-box input{
+    width:100%;
+    padding:12px 16px 12px 40px;
+    border:2px solid var(--ink);
+    border-radius:100px;
+    background:var(--white);
+    font-family:inherit;
+    font-size:0.95rem;
+    color:var(--ink);
+  }
+  .search-box input:focus{outline:3px solid var(--ochre);}
+  .search-box::before{
+    content:"🔍";
+    position:absolute;
+    left:14px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:0.9rem;
+    pointer-events:none;
+  }
+  .upload-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--white);
+    color:var(--ink);
+    border:2px dashed var(--ink);
+    border-radius:100px;
+    padding:11px 18px;
+    font-weight:600;
+    font-size:0.88rem;
+  }
+  .upload-btn:hover{background:var(--paper-dim);}
+
+  .tabs{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    position:sticky;
+    top:70px;
+    z-index:30;
+    background:var(--paper);
+    padding-top:16px;
+    padding-bottom:14px;
+  }
+  .tab{
+    all:unset;
+    border:2px solid var(--ink);
+    background:var(--white);
+    color:var(--ink);
+    border-radius:100px;
+    padding:9px 18px;
+    font-weight:600;
+    font-size:0.9rem;
+    cursor:pointer;
+    transition:background .15s ease, color .15s ease;
+  }
+  .tab.active{
+    background:var(--sea);
+    color:var(--white);
+    border-color:var(--sea-dark);
+  }
+
+  /* ---------- CATALOG ---------- */
+  .catalog{
+    max-width:1180px;
+    margin:0 auto;
+    padding:6px 24px 80px;
+  }
+  .category-block{
+    margin-bottom:52px;
+  }
+  .category-title{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:22px;
+  }
+  .category-title h3{
+    font-size:1.4rem;
+    white-space:nowrap;
+  }
+  .category-title .line{
+    flex:1;
+    height:2px;
+    background:repeating-linear-gradient(90deg, var(--ink) 0 8px, transparent 8px 14px);
+    opacity:.5;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));
+    gap:20px;
+  }
+  .no-results{
+    color:var(--ink-soft);
+    text-align:center;
+    padding:40px 0;
+    font-size:0.95rem;
+  }
+
+  /* ---------- STICKER CARD ---------- */
+  .sticker-card{
+    position:relative;
+    text-align:center;
+  }
+  .sticker-btn{
+    all:unset;
+    display:block;
+    width:100%;
+    cursor:pointer;
+  }
+  .sticker-face{
+    position:relative;
+    aspect-ratio:1/1;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+    background:var(--white);
+    border:5px solid var(--white);
+    outline:2px solid var(--ink);
+    box-shadow:0 6px 0 -1px rgba(36,33,29,.18), var(--shadow);
+    transform:rotate(var(--rot, -2deg));
+    transition:transform .18s ease, box-shadow .18s ease;
+    overflow:hidden;
+  }
+  .sticker-face img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
+  .sticker-btn:hover .sticker-face{
+    transform:rotate(var(--rot, -2deg)) translateY(-4px) scale(1.03);
+  }
+  .sticker-btn:focus-visible .sticker-face{
+    outline:3px solid var(--ochre);
+  }
+  .sticker-name{
+    margin-top:12px;
+    font-weight:600;
+    font-size:0.86rem;
+    line-height:1.3;
+  }
+  .sticker-add{
+    margin-top:2px;
+    font-size:0.76rem;
+    color:var(--ink-soft);
+  }
+  .check-badge{
+    position:absolute;
+    top:-8px;
+    right:-6px;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:var(--olive);
+    border:3px solid var(--white);
+    color:var(--white);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:0.85rem;
+    font-weight:800;
+    opacity:0;
+    transform:scale(.6);
+    transition:opacity .15s ease, transform .15s ease;
+    box-shadow:var(--shadow);
+    z-index:2;
+  }
+  .sticker-card.selected .check-badge{
+    opacity:1;
+    transform:scale(1);
+  }
+  .sticker-card.selected .sticker-face{
+    outline:3px solid var(--olive);
+  }
+  .sticker-card.selected .sticker-add{
+    color:var(--olive);
+    font-weight:600;
+  }
+
+  /* ---------- UPLOAD PANEL ---------- */
+  .own-note{
+    background:#FBEFE0;
+    border:2px dashed var(--terracotta);
+    border-radius:14px;
+    padding:14px 18px;
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    margin-bottom:22px;
+    line-height:1.5;
+  }
+  .own-note strong{color:var(--terracotta);}
+
+  /* ---------- CART DRAWER ---------- */
+  .overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(36,33,29,.45);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .2s ease;
+    z-index:50;
+  }
+  .overlay.open{opacity:1;pointer-events:auto;}
+
+  .drawer{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100%;
+    width:min(420px, 100%);
+    background:var(--white);
+    border-left:2px solid var(--ink);
+    z-index:60;
+    transform:translateX(100%);
+    transition:transform .25s ease;
+    display:flex;
+    flex-direction:column;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{
+    padding:22px 22px 16px;
+    border-bottom:2px dashed var(--ink);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .drawer-head h3{font-size:1.3rem;}
+  .drawer-close{
+    all:unset;
+    cursor:pointer;
+    font-size:1.4rem;
+    line-height:1;
+    padding:4px 8px;
+  }
+  .drawer-body{
+    flex:1;
+    overflow-y:auto;
+    padding:18px 22px;
+  }
+  .empty-msg{
+    color:var(--ink-soft);
+    font-size:0.95rem;
+    margin-top:24px;
+    text-align:center;
+  }
+  .cart-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 0;
+    border-bottom:1px solid var(--paper-dim);
+  }
+  .cart-item .mini-face{
+    width:46px;height:46px;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--white);
+    border:3px solid var(--white);
+    outline:2px solid var(--ink);
+    flex-shrink:0;
+    overflow:hidden;
+  }
+  .cart-item .mini-face img{width:100%;height:100%;object-fit:contain;}
+  .cart-item .info{flex:1;min-width:0;}
+  .cart-item .info .name{font-weight:600;font-size:0.87rem;}
+  .cart-item .info .cat{font-size:0.74rem;color:var(--ink-soft);}
+  .qty-ctrl{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .qty-ctrl button{
+    all:unset;
+    width:24px;height:24px;
+    border:2px solid var(--ink);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;
+    font-size:0.9rem;
+    cursor:pointer;
+  }
+  .qty-ctrl span{min-width:16px;text-align:center;font-weight:600;font-size:0.88rem;}
+  .remove-btn{
+    all:unset;
+    cursor:pointer;
+    color:var(--terracotta);
+    font-size:0.76rem;
+    text-decoration:underline;
+    margin-left:4px;
+  }
+
+  .drawer-form{
+    border-top:2px dashed var(--ink);
+    padding:18px 22px 22px;
+    background:var(--paper);
+  }
+  .drawer-form h4{
+    font-family:'Fraunces', serif;
+    font-size:1.05rem;
+    margin:0 0 12px;
+  }
+  .field{
+    margin-bottom:12px;
+  }
+  .field label{
+    display:block;
+    font-size:0.78rem;
+    font-weight:600;
+    margin-bottom:4px;
+    color:var(--ink-soft);
+  }
+  .field input,.field textarea{
+    width:100%;
+    padding:10px 12px;
+    border:2px solid var(--ink);
+    border-radius:10px;
+    background:var(--white);
+    font-family:inherit;
+    font-size:0.9rem;
+    color:var(--ink);
+  }
+  .field textarea{resize:vertical;min-height:56px;}
+  .field input:focus,.field textarea:focus{outline:3px solid var(--ochre);}
+
+  .send-btn{
+    width:100%;
+    margin-top:6px;
+    background:var(--sea);
+    color:var(--white);
+    border:2px solid var(--sea-dark);
+    border-radius:100px;
+    padding:13px;
+    font-weight:700;
+    font-size:0.95rem;
+    box-shadow:4px 4px 0 var(--sea-dark);
+    transition:transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+  }
+  .send-btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--sea-dark);}
+  .send-btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none;}
+  .form-hint{
+    font-size:0.74rem;
+    color:var(--ink-soft);
+    margin-top:8px;
+    line-height:1.4;
+  }
+  .form-msg{
+    font-size:0.8rem;
+    margin-top:8px;
+    font-weight:600;
+    display:none;
+  }
+  .form-msg.show{display:block;}
+  .form-msg.ok{color:var(--olive);}
+  .form-msg.err{color:var(--terracotta);}
+
+  footer{
+    max-width:1180px;
+    margin:0 auto;
+    padding:32px 24px 60px;
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:0.82rem;
+  }
+
+  @media (max-width:820px){
+    .hero{grid-template-columns:1fr;padding-top:36px;}
+    .hero-sheet{order:-1;}
+    .tabs{top:64px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; scroll-behavior:auto !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="assets/brand/logo.png" alt="Málaga Stickers" class="brand-logo">
+      <span class="brand-sub">arma tu lámina, pídela cuando quieras</span>
+    </div>
+    <button class="cart-btn" id="openCart" aria-haspopup="true">
+      Mi colección <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Elige tus stickers,<br>arma <em>tu propia lámina</em></h1>
+    <p>Busca por nombre o recorre las categorías, marca los que más te gusten y arma tu colección. Cuando la tengas lista, la enviamos directamente al equipo para preparar tu pedido.</p>
+    <a href="#catalogo" class="hero-cta">Ver catálogo ↓</a>
+  </div>
+  <div class="hero-sheet" id="heroSheet" aria-hidden="true"></div>
+</section>
+
+<div class="toolbar">
+  <div class="search-row">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar por nombre (ej: mate, corazón, good vibes...)">
+    </div>
+    <label class="upload-btn" for="fileInput">＋ Subir mis stickers</label>
+    <input type="file" id="fileInput" accept="image/*" multiple hidden>
+  </div>
+</div>
+
+<div class="tabs" id="tabs"></div>
+
+<main class="catalog" id="catalog">
+  <div class="own-note" id="ownNote" style="display:none;">
+    <strong>Tus stickers subidos:</strong> estas imágenes las has añadido tú directamente en el navegador, no se han revisado ni se guardan en ningún servidor — la responsabilidad sobre los derechos de uso de estas imágenes es tuya. Al recargar la página se perderán, así que confirma tu pedido antes de cerrar.
+  </div>
+</main>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Mi colección de stickers">
+  <div class="drawer-head">
+    <h3>Mi colección</h3>
+    <button class="drawer-close" id="closeCart" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody">
+    <p class="empty-msg">Todavía no has añadido ningún sticker. Toca cualquiera del catálogo para empezar tu colección.</p>
+  </div>
+  <form class="drawer-form" id="orderForm">
+    <h4>Tus datos para el pedido</h4>
+    <div class="field">
+      <label for="custName">Nombre</label>
+      <input type="text" id="custName" required placeholder="Tu nombre">
+    </div>
+    <div class="field">
+      <label for="custEmail">Email de contacto</label>
+      <input type="email" id="custEmail" required placeholder="tu@email.com">
+    </div>
+    <div class="field">
+      <label for="custPhone">Teléfono (opcional)</label>
+      <input type="tel" id="custPhone" placeholder="600 000 000">
+    </div>
+    <div class="field">
+      <label for="custNotes">Notas para el pedido (opcional)</label>
+      <textarea id="custNotes" placeholder="Ej: preferencia de tamaño, dirección de envío..."></textarea>
+    </div>
+    <button type="submit" class="send-btn" id="sendBtn" disabled>Enviar pedido por email</button>
+    <p class="form-msg" id="formMsg"></p>
+    <p class="form-hint">Al enviar se abrirá tu programa de correo con el pedido ya redactado a hola@malagastickers.es. Revísalo y pulsa enviar allí para confirmarlo. Los stickers subidos por ti se listan por su nombre de archivo — no se adjunta la imagen al correo.</p>
+  </form>
+</aside>
+
+<footer>
+  Málaga Stickers — catálogo. Pedidos a hola@malagastickers.es
+</footer>
+
+<script>
+  const ADMIN_EMAIL = "hola@malagastickers.es";
+  let CATEGORY_LABELS = { propios: "Tus stickers" };
+  const rotations = [-6,-3,-1,2,4,-4,3,-2,5,-5];
+  function rotFor(idx){ return rotations[idx % rotations.length] + "deg"; }
+
+  // ---------- DATA (se carga desde manifest.json / categories.json, generados por build.js) ----------
+  const allItems = {};
+  const categories = {}; // category -> [items]
+  let categoryOrder = [];
+
+  async function loadCatalog(){
+    const [manifestRes, categoriesRes] = await Promise.all([
+      fetch("manifest.json").catch(() => null),
+      fetch("categories.json").catch(() => null),
+    ]);
+    const catalogData = manifestRes && manifestRes.ok ? await manifestRes.json() : [];
+    const labels = categoriesRes && categoriesRes.ok ? await categoriesRes.json() : {};
+    CATEGORY_LABELS = { ...labels, ...CATEGORY_LABELS };
+
+    catalogData.forEach(it => {
+      allItems[it.id] = { ...it, catName: CATEGORY_LABELS[it.category] || it.category };
+      (categories[it.category] = categories[it.category] || []).push(allItems[it.id]);
+    });
+    const labelOrder = Object.keys(labels);
+    const extra = Object.keys(categories).filter(c => !labelOrder.includes(c));
+    categoryOrder = [...labelOrder.filter(c => categories[c]), ...extra];
+  }
+
+  // ---------- STATE ----------
+  const selection = new Map(); // id -> qty
+  let activeTab = "all";
+  let searchTerm = "";
+  let ownCounter = 0;
+
+  // ---------- HERO SAMPLE ----------
+  const heroSheet = document.getElementById("heroSheet");
+  const heroPositions = [
+    {top:"2%", left:"6%", w:"34%", rot:"-8deg"},
+    {top:"4%", right:"2%", w:"30%", rot:"9deg"},
+    {bottom:"20%", left:"0%", w:"32%", rot:"6deg"},
+    {bottom:"0%", right:"14%", w:"30%", rot:"-6deg"},
+    {top:"36%", left:"32%", w:"30%", rot:"-12deg"},
+  ];
+  function renderHero(){
+    // toma una muestra repartida entre categorías, no IDs fijos, para no
+    // romperse cuando se agreguen o quiten stickers del catálogo
+    const pool = Object.values(allItems);
+    const sample = [];
+    const step = Math.max(1, Math.floor(pool.length / heroPositions.length));
+    for(let i = 0; i < heroPositions.length && i * step < pool.length; i++){
+      sample.push(pool[i * step]);
+    }
+    heroSheet.innerHTML = "";
+    sample.forEach((item, i) => {
+      const pos = heroPositions[i];
+      const div = document.createElement("div");
+      div.className = "float-stk";
+      let style = `width:${pos.w};`;
+      if(pos.top) style += `top:${pos.top};`;
+      if(pos.bottom) style += `bottom:${pos.bottom};`;
+      if(pos.left) style += `left:${pos.left};`;
+      if(pos.right) style += `right:${pos.right};`;
+      style += `transform:rotate(${pos.rot});`;
+      div.setAttribute("style", style);
+      div.innerHTML = `<img src="${item.file}" alt="">`;
+      heroSheet.appendChild(div);
+    });
+  }
+
+  // ---------- RENDER TABS ----------
+  const tabsEl = document.getElementById("tabs");
+  function renderTabs(){
+    tabsEl.innerHTML = "";
+    const allBtn = document.createElement("button");
+    allBtn.className = "tab" + (activeTab === "all" ? " active" : "");
+    allBtn.textContent = "Todo";
+    allBtn.dataset.target = "all";
+    tabsEl.appendChild(allBtn);
+
+    const order = categories["propios"] ? [...categoryOrder, "propios"] : categoryOrder;
+    order.forEach(cat => {
+      if(!categories[cat]) return;
+      const btn = document.createElement("button");
+      btn.className = "tab" + (activeTab === cat ? " active" : "");
+      btn.textContent = CATEGORY_LABELS[cat] || cat;
+      btn.dataset.target = cat;
+      tabsEl.appendChild(btn);
+    });
+  }
+  tabsEl.addEventListener("click", (e) => {
+    const t = e.target.closest(".tab");
+    if(!t) return;
+    activeTab = t.dataset.target;
+    renderTabs();
+    renderCatalog();
+  });
+
+  // ---------- SEARCH ----------
+  document.getElementById("searchInput").addEventListener("input", (e) => {
+    searchTerm = e.target.value.trim().toLowerCase();
+    renderCatalog();
+  });
+
+  // ---------- RENDER CATALOG ----------
+  const catalogEl = document.getElementById("catalog");
+  const ownNote = document.getElementById("ownNote");
+
+  function renderCatalog(){
+    // clear everything except the ownNote element
+    [...catalogEl.children].forEach(ch => { if(ch !== ownNote) ch.remove(); });
+
+    const order = categories["propios"] ? [...categoryOrder, "propios"] : categoryOrder;
+    let anyRendered = false;
+
+    order.forEach(cat => {
+      if(activeTab !== "all" && activeTab !== cat) return;
+      const items = (categories[cat] || []).filter(it =>
+        !searchTerm || it.name.toLowerCase().includes(searchTerm)
+      );
+      if(items.length === 0) return;
+      anyRendered = true;
+
+      const block = document.createElement("div");
+      block.className = "category-block";
+
+      const titleWrap = document.createElement("div");
+      titleWrap.className = "category-title";
+      titleWrap.innerHTML = `<h3>${CATEGORY_LABELS[cat] || cat}</h3><div class="line"></div>`;
+      block.appendChild(titleWrap);
+
+      const grid = document.createElement("div");
+      grid.className = "grid";
+
+      items.forEach((item, idx) => {
+        const card = document.createElement("div");
+        card.className = "sticker-card" + (selection.has(item.id) ? " selected" : "");
+        card.id = "card-" + item.id;
+        card.innerHTML = `
+          <button class="sticker-btn" data-id="${item.id}" aria-pressed="${selection.has(item.id)}">
+            <div class="sticker-face" style="--rot:${rotFor(idx)};">
+              <span class="check-badge">✓</span>
+              <img src="${item.file}" alt="${item.name}" loading="lazy">
+            </div>
+            <div class="sticker-name">${item.name}</div>
+            <div class="sticker-add">${selection.has(item.id) ? "Añadido ✓" : "Toca para añadir"}</div>
+          </button>
+        `;
+        grid.appendChild(card);
+      });
+
+      block.appendChild(grid);
+      catalogEl.appendChild(block);
+
+      if(cat === "propios") ownNote.style.display = "block";
+    });
+
+    if(!anyRendered){
+      const msg = document.createElement("p");
+      msg.className = "no-results";
+      msg.textContent = "No se ha encontrado ningún sticker con ese nombre.";
+      catalogEl.appendChild(msg);
+    }
+  }
+
+  catalogEl.addEventListener("click", (e) => {
+    const btn = e.target.closest(".sticker-btn");
+    if(!btn) return;
+    toggleItem(btn.dataset.id);
+  });
+
+  function toggleItem(id){
+    if(selection.has(id)){
+      selection.delete(id);
+    } else {
+      selection.set(id, 1);
+    }
+    const card = document.getElementById("card-" + id);
+    if(card){
+      const isSel = selection.has(id);
+      card.classList.toggle("selected", isSel);
+      card.querySelector(".sticker-btn").setAttribute("aria-pressed", isSel);
+      card.querySelector(".sticker-add").textContent = isSel ? "Añadido ✓" : "Toca para añadir";
+    }
+    renderCart();
+  }
+
+  // ---------- UPLOAD OWN STICKERS ----------
+  document.getElementById("fileInput").addEventListener("change", (e) => {
+    const files = [...e.target.files];
+    if(files.length === 0) return;
+    files.forEach(file => {
+      ownCounter++;
+      const id = "own-" + ownCounter;
+      const url = URL.createObjectURL(file);
+      const name = file.name.replace(/\.[^.]+$/, "");
+      const item = { id, name, category: "propios", file: url, catName: CATEGORY_LABELS.propios };
+      allItems[id] = item;
+      (categories["propios"] = categories["propios"] || []).push(item);
+    });
+    activeTab = "propios";
+    renderTabs();
+    renderCatalog();
+    e.target.value = "";
+  });
+
+  // ---------- CART DRAWER ----------
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("overlay");
+  const drawerBody = document.getElementById("drawerBody");
+  const cartCount = document.getElementById("cartCount");
+  const sendBtn = document.getElementById("sendBtn");
+  const formMsg = document.getElementById("formMsg");
+
+  document.getElementById("openCart").addEventListener("click", openDrawer);
+  document.getElementById("closeCart").addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+
+  function openDrawer(){
+    drawer.classList.add("open");
+    overlay.classList.add("open");
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open");
+    overlay.classList.remove("open");
+  }
+
+  function renderCart(){
+    const totalQty = [...selection.values()].reduce((a,b) => a+b, 0);
+    cartCount.textContent = totalQty;
+    sendBtn.disabled = selection.size === 0;
+
+    if(selection.size === 0){
+      drawerBody.innerHTML = `<p class="empty-msg">Todavía no has añadido ningún sticker. Toca cualquiera del catálogo para empezar tu colección.</p>`;
+      return;
+    }
+
+    drawerBody.innerHTML = "";
+    selection.forEach((qty, id) => {
+      const item = allItems[id];
+      if(!item) return;
+      const row = document.createElement("div");
+      row.className = "cart-item";
+      row.innerHTML = `
+        <div class="mini-face"><img src="${item.file}" alt=""></div>
+        <div class="info">
+          <div class="name">${item.name}</div>
+          <div class="cat">${item.catName}</div>
+        </div>
+        <div class="qty-ctrl">
+          <button type="button" data-action="dec" data-id="${id}" aria-label="Quitar uno">−</button>
+          <span>${qty}</span>
+          <button type="button" data-action="inc" data-id="${id}" aria-label="Añadir uno">+</button>
+        </div>
+        <button type="button" class="remove-btn" data-action="remove" data-id="${id}">Quitar</button>
+      `;
+      drawerBody.appendChild(row);
+    });
+  }
+
+  drawerBody.addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-action]");
+    if(!btn) return;
+    const id = btn.dataset.id;
+    const action = btn.dataset.action;
+    if(action === "inc"){
+      selection.set(id, selection.get(id) + 1);
+    } else if(action === "dec"){
+      const newQty = selection.get(id) - 1;
+      if(newQty <= 0){ selection.delete(id); syncCard(id); }
+      else selection.set(id, newQty);
+    } else if(action === "remove"){
+      selection.delete(id);
+      syncCard(id);
+    }
+    renderCart();
+  });
+
+  function syncCard(id){
+    const card = document.getElementById("card-" + id);
+    if(!card) return;
+    card.classList.remove("selected");
+    const b = card.querySelector(".sticker-btn");
+    if(b) b.setAttribute("aria-pressed","false");
+    const a = card.querySelector(".sticker-add");
+    if(a) a.textContent = "Toca para añadir";
+  }
+
+  // ---------- SEND ORDER (mailto) ----------
+  const orderForm = document.getElementById("orderForm");
+  orderForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if(selection.size === 0) return;
+
+    const name = document.getElementById("custName").value.trim();
+    const email = document.getElementById("custEmail").value.trim();
+    const phone = document.getElementById("custPhone").value.trim();
+    const notes = document.getElementById("custNotes").value.trim();
+
+    if(!name || !email){
+      showMsg("Rellena al menos tu nombre y email antes de enviar.", "err");
+      return;
+    }
+
+    const lines = [];
+    lines.push(`Nuevo pedido de stickers`);
+    lines.push(``);
+    lines.push(`Cliente: ${name}`);
+    lines.push(`Email: ${email}`);
+    if(phone) lines.push(`Teléfono: ${phone}`);
+    lines.push(``);
+    lines.push(`Stickers seleccionados:`);
+    let totalQty = 0;
+    let hasOwn = false;
+    selection.forEach((qty, id) => {
+      const item = allItems[id];
+      if(!item) return;
+      const tag = item.category === "propios" ? " [imagen subida por el cliente]" : "";
+      if(item.category === "propios") hasOwn = true;
+      lines.push(`  - ${item.name} (${item.catName}) x${qty}${tag}`);
+      totalQty += qty;
+    });
+    lines.push(``);
+    lines.push(`Total de unidades: ${totalQty}`);
+    if(notes) { lines.push(``); lines.push(`Notas del cliente: ${notes}`); }
+    if(hasOwn) { lines.push(``); lines.push(`Nota: el pedido incluye imágenes subidas por el propio cliente, no adjuntas en este email.`); }
+
+    const subject = `Pedido de stickers — ${name}`;
+    const body = lines.join("\n");
+    const mailto = `mailto:${ADMIN_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailto;
+    showMsg("Se ha abierto tu programa de correo con el pedido redactado. Pulsa enviar allí para confirmarlo.", "ok");
+  });
+
+  function showMsg(text, type){
+    formMsg.textContent = text;
+    formMsg.className = "form-msg show " + type;
+  }
+
+  // ---------- INIT ----------
+  (async function init(){
+    await loadCatalog();
+    renderHero();
+    renderTabs();
+    renderCatalog();
+    renderCart();
+  })();
+</script>
+
+</body>
+</html>

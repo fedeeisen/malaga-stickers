@@ -1,0 +1,842 @@
+[
+  {
+    "id": "F001",
+    "name": "MATE",
+    "category": "frases",
+    "file": "assets/frases/F001 - MATE.png"
+  },
+  {
+    "id": "F002",
+    "name": "I LOVE ARGENTINA",
+    "category": "frases",
+    "file": "assets/frases/F002 - I LOVE ARGENTINA.png"
+  },
+  {
+    "id": "F003",
+    "name": "100% ARGENTINO",
+    "category": "frases",
+    "file": "assets/frases/F003 - 100% ARGENTINO.png"
+  },
+  {
+    "id": "F004",
+    "name": "MAKE IT HAPPEN",
+    "category": "frases",
+    "file": "assets/frases/F004 - MAKE IT HAPPEN.png"
+  },
+  {
+    "id": "F005",
+    "name": "BELIEVE IN YOU",
+    "category": "frases",
+    "file": "assets/frases/F005 - BELIEVE IN YOU.png"
+  },
+  {
+    "id": "F007",
+    "name": "UN POCO DE CHISME",
+    "category": "frases",
+    "file": "assets/frases/F007 - UN POCO DE CHISME.png"
+  },
+  {
+    "id": "F008",
+    "name": "LO SODIO A TODOS",
+    "category": "frases",
+    "file": "assets/frases/F008 - LO SODIO A TODOS.png"
+  },
+  {
+    "id": "F009",
+    "name": "SIEMPRE DISOCIANDO",
+    "category": "frases",
+    "file": "assets/frases/F009 - SIEMPRE DISOCIANDO.png"
+  },
+  {
+    "id": "F011",
+    "name": "-BLA +AMOR",
+    "category": "frases",
+    "file": "assets/frases/F011 - -BLA +AMOR.png"
+  },
+  {
+    "id": "F012",
+    "name": "SOTANO NUNCA",
+    "category": "frases",
+    "file": "assets/frases/F012 - SOTANO NUNCA.png"
+  },
+  {
+    "id": "F013",
+    "name": "I LOVE CTRL+Z",
+    "category": "frases",
+    "file": "assets/frases/F013 - I LOVE CTRL+Z.png"
+  },
+  {
+    "id": "F014",
+    "name": "EVERYTHING IS UNDER CONTROL",
+    "category": "frases",
+    "file": "assets/frases/F014 - EVERYTHING IS UNDER CONTROL.png"
+  },
+  {
+    "id": "F016",
+    "name": "Son todos potus",
+    "category": "frases",
+    "file": "assets/frases/F016 - Son todos potus.png"
+  },
+  {
+    "id": "F017",
+    "name": "PACIN ATTACK",
+    "category": "frases",
+    "file": "assets/frases/F017 - PACIN ATTACK.png"
+  },
+  {
+    "id": "F018",
+    "name": "HELP ME",
+    "category": "frases",
+    "file": "assets/frases/F018 - HELP ME.png"
+  },
+  {
+    "id": "F020",
+    "name": "SOY REWSPONSABLE",
+    "category": "frases",
+    "file": "assets/frases/F020 - SOY REWSPONSABLE.png"
+  },
+  {
+    "id": "F021",
+    "name": "GOOD VIBES",
+    "category": "frases",
+    "file": "assets/frases/F021 - GOOD VIBES.png"
+  },
+  {
+    "id": "F022",
+    "name": "HERE COMES THE SUN",
+    "category": "frases",
+    "file": "assets/frases/F022 - HERE COMES THE SUN.png"
+  },
+  {
+    "id": "F023",
+    "name": "ALL YOU NEED IS LOVE",
+    "category": "frases",
+    "file": "assets/frases/F023 - ALL YOU NEED IS LOVE.png"
+  },
+  {
+    "id": "F024",
+    "name": "GOOD THINGS ARE COMING",
+    "category": "frases",
+    "file": "assets/frases/F024 - GOOD THINGS ARE COMING.png"
+  },
+  {
+    "id": "F025",
+    "name": "NAMASTE",
+    "category": "frases",
+    "file": "assets/frases/F025 - NAMASTE.png"
+  },
+  {
+    "id": "F026",
+    "name": "CEREZAS",
+    "category": "frases",
+    "file": "assets/frases/F026 - CEREZAS.png"
+  },
+  {
+    "id": "F027",
+    "name": "AGUACATE",
+    "category": "frases",
+    "file": "assets/frases/F027 - AGUACATE.png"
+  },
+  {
+    "id": "F028",
+    "name": "RAINBOW OVNI",
+    "category": "frases",
+    "file": "assets/frases/F028 - RAINBOW OVNI.png"
+  },
+  {
+    "id": "F029",
+    "name": "RAINBOW ALIEN",
+    "category": "frases",
+    "file": "assets/frases/F029 - RAINBOW ALIEN.png"
+  },
+  {
+    "id": "F030",
+    "name": "FERNET",
+    "category": "frases",
+    "file": "assets/frases/F030 - FERNET.png"
+  },
+  {
+    "id": "F031",
+    "name": "SI A TODO",
+    "category": "frases",
+    "file": "assets/frases/F031 - SI A TODO.png"
+  },
+  {
+    "id": "F032",
+    "name": "AMIGA, DATE CUENTA",
+    "category": "frases",
+    "file": "assets/frases/F032 - AMIGA, DATE CUENTA.png"
+  },
+  {
+    "id": "F033",
+    "name": "SARCASM",
+    "category": "frases",
+    "file": "assets/frases/F033 - SARCASM.png"
+  },
+  {
+    "id": "F034",
+    "name": "INSISTIR",
+    "category": "frases",
+    "file": "assets/frases/F034 - INSISTIR.png"
+  },
+  {
+    "id": "F035",
+    "name": "LO UNICO IMPOSIBLE",
+    "category": "frases",
+    "file": "assets/frases/F035 - LO UNICO IMPOSIBLE.png"
+  },
+  {
+    "id": "F036",
+    "name": "SE EL CAMBIO",
+    "category": "frases",
+    "file": "assets/frases/F036 - SE EL CAMBIO.png"
+  },
+  {
+    "id": "F037",
+    "name": "TODO CON AMOR",
+    "category": "frases",
+    "file": "assets/frases/F037 - TODO CON AMOR.png"
+  },
+  {
+    "id": "F038",
+    "name": "LLEVO DE TODO",
+    "category": "frases",
+    "file": "assets/frases/F038 - LLEVO DE TODO.png"
+  },
+  {
+    "id": "F039",
+    "name": "LA MALAS VIBRAS",
+    "category": "frases",
+    "file": "assets/frases/F039 - LA MALAS VIBRAS.png"
+  },
+  {
+    "id": "F040",
+    "name": "ANTI-SOCIAL",
+    "category": "frases",
+    "file": "assets/frases/F040 - ANTI-SOCIAL.png"
+  },
+  {
+    "id": "F041",
+    "name": "Y",
+    "category": "frases",
+    "file": "assets/frases/F041 - Y.png"
+  },
+  {
+    "id": "F042",
+    "name": "A LLORAR",
+    "category": "frases",
+    "file": "assets/frases/F042 - A LLORAR.png"
+  },
+  {
+    "id": "F043",
+    "name": "SIN MIEDO AL EXITO",
+    "category": "frases",
+    "file": "assets/frases/F043 - SIN MIEDO AL EXITO.png"
+  },
+  {
+    "id": "F044",
+    "name": "EL BEBER",
+    "category": "frases",
+    "file": "assets/frases/F044 - EL BEBER.png"
+  },
+  {
+    "id": "F045",
+    "name": "BEERGETARIAN",
+    "category": "frases",
+    "file": "assets/frases/F045 - BEERGETARIAN.png"
+  },
+  {
+    "id": "F046",
+    "name": "JUSTICIA POR EL PADRE",
+    "category": "frases",
+    "file": "assets/frases/F046 - JUSTICIA POR EL PADRE.png"
+  },
+  {
+    "id": "F047",
+    "name": "SOY LA PUTA AMA",
+    "category": "frases",
+    "file": "assets/frases/F047 - SOY LA PUTA AMA.png"
+  },
+  {
+    "id": "F052",
+    "name": "RETRO CAR",
+    "category": "frases",
+    "file": "assets/frases/F052 - RETRO CAR.png"
+  },
+  {
+    "id": "F053",
+    "name": "RETRO CAR",
+    "category": "frases",
+    "file": "assets/frases/F053 - RETRO CAR.png"
+  },
+  {
+    "id": "F056",
+    "name": "TODO OK",
+    "category": "frases",
+    "file": "assets/frases/F056 - TODO OK.png"
+  },
+  {
+    "id": "F058",
+    "name": "ARGENTINA",
+    "category": "frases",
+    "file": "assets/frases/F058 - ARGENTINA.png"
+  },
+  {
+    "id": "F059",
+    "name": "MADE IN ARG",
+    "category": "frases",
+    "file": "assets/frases/F059 - MADE IN ARG.png"
+  },
+  {
+    "id": "F060",
+    "name": "FANTASMA ATPC",
+    "category": "frases",
+    "file": "assets/frases/F060 - FANTASMA ATPC.png"
+  },
+  {
+    "id": "F061",
+    "name": "ATPC",
+    "category": "frases",
+    "file": "assets/frases/F061 - ATPC.png"
+  },
+  {
+    "id": "F064",
+    "name": "NO ESTOY LOCA",
+    "category": "frases",
+    "file": "assets/frases/F064 - NO ESTOY LOCA.png"
+  },
+  {
+    "id": "F065",
+    "name": "WOW",
+    "category": "frases",
+    "file": "assets/frases/F065 - WOW.png"
+  },
+  {
+    "id": "F066",
+    "name": "COOL",
+    "category": "frases",
+    "file": "assets/frases/F066 - COOL.png"
+  },
+  {
+    "id": "F067",
+    "name": "COOL",
+    "category": "frases",
+    "file": "assets/frases/F067 - COOL.png"
+  },
+  {
+    "id": "F068",
+    "name": "SURFER VAN",
+    "category": "frases",
+    "file": "assets/frases/F068 - SURFER VAN.png"
+  },
+  {
+    "id": "F070",
+    "name": "FLOWER POWER",
+    "category": "frases",
+    "file": "assets/frases/F070 - FLOWER POWER.png"
+  },
+  {
+    "id": "F071",
+    "name": "HECHA PARA BRILLAR",
+    "category": "frases",
+    "file": "assets/frases/F071 - HECHA PARA BRILLAR.png"
+  },
+  {
+    "id": "F072",
+    "name": "QUE DIFICIL",
+    "category": "frases",
+    "file": "assets/frases/F072 - QUE DIFICIL.png"
+  },
+  {
+    "id": "F078",
+    "name": "ESPERANDO",
+    "category": "frases",
+    "file": "assets/frases/F078 - ESPERANDO.png"
+  },
+  {
+    "id": "F079",
+    "name": "ELLA CREYO",
+    "category": "frases",
+    "file": "assets/frases/F079 - ELLA CREYO.png"
+  },
+  {
+    "id": "F080",
+    "name": "HAZ QUE SUCEDA",
+    "category": "frases",
+    "file": "assets/frases/F080 - HAZ QUE SUCEDA.png"
+  },
+  {
+    "id": "F081",
+    "name": "MENOS CABEZA",
+    "category": "frases",
+    "file": "assets/frases/F081 - MENOS CABEZA.png"
+  },
+  {
+    "id": "F082",
+    "name": "MIENTRAS LLEGAS A DESTINO",
+    "category": "frases",
+    "file": "assets/frases/F082 - MIENTRAS LLEGAS A DESTINO.png"
+  },
+  {
+    "id": "F083",
+    "name": "LA VIDA ES MEJOR CUANDO RIES",
+    "category": "frases",
+    "file": "assets/frases/F083 - LA VIDA ES MEJOR CUANDO RIES.png"
+  },
+  {
+    "id": "F084",
+    "name": "QUE TUS SUEÑOS SEAN MAS GRANDES",
+    "category": "frases",
+    "file": "assets/frases/F084 - QUE TUS SUEÑOS SEAN MAS GRANDES.png"
+  },
+  {
+    "id": "F085",
+    "name": "QUEDA DETENGA",
+    "category": "frases",
+    "file": "assets/frases/F085 - QUEDA DETENGA.png"
+  },
+  {
+    "id": "F086",
+    "name": "LO UNICO IMPOSIBLE",
+    "category": "frases",
+    "file": "assets/frases/F086 - LO UNICO IMPOSIBLE.png"
+  },
+  {
+    "id": "F087",
+    "name": "SI EL PLAN NO FUNCIONA",
+    "category": "frases",
+    "file": "assets/frases/F087 - SI EL PLAN NO FUNCIONA.png"
+  },
+  {
+    "id": "F088",
+    "name": "SI BUSCAS RESULTADOS DISTINTOS",
+    "category": "frases",
+    "file": "assets/frases/F088 - SI BUSCAS RESULTADOS DISTINTOS.png"
+  },
+  {
+    "id": "F089",
+    "name": "LA VIDA NO SE MIDE EN MINUTOS",
+    "category": "frases",
+    "file": "assets/frases/F089 - LA VIDA NO SE MIDE EN MINUTOS.png"
+  },
+  {
+    "id": "F090",
+    "name": "SIN AMIGAS LOCAS",
+    "category": "frases",
+    "file": "assets/frases/F090 - SIN AMIGAS LOCAS.png"
+  },
+  {
+    "id": "F091",
+    "name": "DE LA TOXICA PARA EL VISTIMA",
+    "category": "frases",
+    "file": "assets/frases/F091 - DE LA TOXICA PARA EL VISTIMA.png"
+  },
+  {
+    "id": "F092",
+    "name": "QUE NADA CONDICIONE",
+    "category": "frases",
+    "file": "assets/frases/F092 - QUE NADA CONDICIONE.png"
+  },
+  {
+    "id": "F093",
+    "name": "TODO LO QUE DAMOS",
+    "category": "frases",
+    "file": "assets/frases/F093 - TODO LO QUE DAMOS.png"
+  },
+  {
+    "id": "F094",
+    "name": "NO SABIA QUE PONERME",
+    "category": "frases",
+    "file": "assets/frases/F094 - NO SABIA QUE PONERME.png"
+  },
+  {
+    "id": "F095",
+    "name": "LAS MEJORES COSAS",
+    "category": "frases",
+    "file": "assets/frases/F095 - LAS MEJORES COSAS.png"
+  },
+  {
+    "id": "F096",
+    "name": "AMOR - FELICIDAD",
+    "category": "frases",
+    "file": "assets/frases/F096 - AMOR - FELICIDAD.png"
+  },
+  {
+    "id": "F097",
+    "name": "MERECES LO QUE SUEÑAS",
+    "category": "frases",
+    "file": "assets/frases/F097 - MERECES LO QUE SUEÑAS.png"
+  },
+  {
+    "id": "F098",
+    "name": "UN DIA SIN REIR",
+    "category": "frases",
+    "file": "assets/frases/F098 - UN DIA SIN REIR.png"
+  },
+  {
+    "id": "F099",
+    "name": "NUNCA DEJES DE SOÑAR",
+    "category": "frases",
+    "file": "assets/frases/F099 - NUNCA DEJES DE SOÑAR.png"
+  },
+  {
+    "id": "L001",
+    "name": "RUTA 40",
+    "category": "iconos",
+    "file": "assets/iconos/L001 - RUTA 40.png"
+  },
+  {
+    "id": "L002",
+    "name": "MATE",
+    "category": "iconos",
+    "file": "assets/iconos/L002 - MATE.png"
+  },
+  {
+    "id": "L003",
+    "name": "CASSETTE",
+    "category": "iconos",
+    "file": "assets/iconos/L003 - CASSETTE.png"
+  },
+  {
+    "id": "L004",
+    "name": "BOLA 8",
+    "category": "iconos",
+    "file": "assets/iconos/L004 - BOLA 8.png"
+  },
+  {
+    "id": "L008",
+    "name": "ALFAJOR",
+    "category": "iconos",
+    "file": "assets/iconos/L008 - ALFAJOR.png"
+  },
+  {
+    "id": "L016",
+    "name": "SOL ARGENTO",
+    "category": "iconos",
+    "file": "assets/iconos/L016 - SOL ARGENTO.png"
+  },
+  {
+    "id": "L018",
+    "name": "TV",
+    "category": "iconos",
+    "file": "assets/iconos/L018 - TV.png"
+  },
+  {
+    "id": "L019",
+    "name": "HAPPY FACE",
+    "category": "iconos",
+    "file": "assets/iconos/L019 - HAPPY FACE.png"
+  },
+  {
+    "id": "L020",
+    "name": "HAPPY FACE",
+    "category": "iconos",
+    "file": "assets/iconos/L020 - HAPPY FACE.png"
+  },
+  {
+    "id": "L021",
+    "name": "YIN YAN",
+    "category": "iconos",
+    "file": "assets/iconos/L021 - YIN YAN.png"
+  },
+  {
+    "id": "L022",
+    "name": "NO ME QUEMÉ",
+    "category": "iconos",
+    "file": "assets/iconos/L022 - NO ME QUEMÉ.png"
+  },
+  {
+    "id": "L024",
+    "name": "ATPC",
+    "category": "iconos",
+    "file": "assets/iconos/L024 - ATPC.png"
+  },
+  {
+    "id": "L025",
+    "name": "TE QUIERO",
+    "category": "iconos",
+    "file": "assets/iconos/L025 - TE QUIERO.png"
+  },
+  {
+    "id": "L027",
+    "name": "CTRL+Z",
+    "category": "iconos",
+    "file": "assets/iconos/L027 - CTRL+Z.png"
+  },
+  {
+    "id": "L028",
+    "name": "NADA PUEDE MALIR SAL",
+    "category": "iconos",
+    "file": "assets/iconos/L028 - NADA PUEDE MALIR SAL.png"
+  },
+  {
+    "id": "L043",
+    "name": "CUBO",
+    "category": "iconos",
+    "file": "assets/iconos/L043 - CUBO.png"
+  },
+  {
+    "id": "L090",
+    "name": "ESTRELLA",
+    "category": "iconos",
+    "file": "assets/iconos/L090 - ESTRELLA.png"
+  },
+  {
+    "id": "L090",
+    "name": "1 - COOL",
+    "category": "iconos",
+    "file": "assets/iconos/L090-1 - COOL.png"
+  },
+  {
+    "id": "L103",
+    "name": "HAPPY FACE",
+    "category": "iconos",
+    "file": "assets/iconos/L103 - HAPPY FACE.png"
+  },
+  {
+    "id": "L104",
+    "name": "CORAZON",
+    "category": "iconos",
+    "file": "assets/iconos/L104 - CORAZON.png"
+  },
+  {
+    "id": "L105",
+    "name": "LIKE",
+    "category": "iconos",
+    "file": "assets/iconos/L105 - LIKE.png"
+  },
+  {
+    "id": "L106",
+    "name": "HUELLAS",
+    "category": "iconos",
+    "file": "assets/iconos/L106 - HUELLAS.png"
+  },
+  {
+    "id": "L107",
+    "name": "LOVE",
+    "category": "iconos",
+    "file": "assets/iconos/L107 - LOVE.png"
+  },
+  {
+    "id": "L108",
+    "name": "PANDA",
+    "category": "iconos",
+    "file": "assets/iconos/L108 - PANDA.png"
+  },
+  {
+    "id": "L109",
+    "name": "PANDA",
+    "category": "iconos",
+    "file": "assets/iconos/L109 - PANDA.png"
+  },
+  {
+    "id": "L110",
+    "name": "PANDA",
+    "category": "iconos",
+    "file": "assets/iconos/L110 - PANDA.png"
+  },
+  {
+    "id": "L111",
+    "name": "PANDA",
+    "category": "iconos",
+    "file": "assets/iconos/L111 - PANDA.png"
+  },
+  {
+    "id": "L112",
+    "name": "PANDA",
+    "category": "iconos",
+    "file": "assets/iconos/L112 - PANDA.png"
+  },
+  {
+    "id": "L113",
+    "name": "PANDA",
+    "category": "iconos",
+    "file": "assets/iconos/L113 - PANDA.png"
+  },
+  {
+    "id": "L114",
+    "name": "MARIPOSA",
+    "category": "iconos",
+    "file": "assets/iconos/L114 - MARIPOSA.png"
+  },
+  {
+    "id": "L121",
+    "name": "KARMA",
+    "category": "iconos",
+    "file": "assets/iconos/L121 - KARMA.png"
+  },
+  {
+    "id": "L122",
+    "name": "11_11",
+    "category": "iconos",
+    "file": "assets/iconos/L122 - 11_11.png"
+  },
+  {
+    "id": "L123",
+    "name": "NY",
+    "category": "iconos",
+    "file": "assets/iconos/L123 - NY.png"
+  },
+  {
+    "id": "L124",
+    "name": "HAPPY FACE",
+    "category": "iconos",
+    "file": "assets/iconos/L124 - HAPPY FACE.png"
+  },
+  {
+    "id": "L125",
+    "name": "CRAZY FACE",
+    "category": "iconos",
+    "file": "assets/iconos/L125 - CRAZY FACE.png"
+  },
+  {
+    "id": "L126",
+    "name": "CRAZY FACE",
+    "category": "iconos",
+    "file": "assets/iconos/L126 - CRAZY FACE.png"
+  },
+  {
+    "id": "L127",
+    "name": "MAPA",
+    "category": "iconos",
+    "file": "assets/iconos/L127 - MAPA.png"
+  },
+  {
+    "id": "L128",
+    "name": "MAPA",
+    "category": "iconos",
+    "file": "assets/iconos/L128 - MAPA.png"
+  },
+  {
+    "id": "L129",
+    "name": "ARGENTINA",
+    "category": "iconos",
+    "file": "assets/iconos/L129 - ARGENTINA.png"
+  },
+  {
+    "id": "L130",
+    "name": "MUSICA",
+    "category": "iconos",
+    "file": "assets/iconos/L130 - MUSICA.png"
+  },
+  {
+    "id": "L131",
+    "name": "REPRODUCTOR",
+    "category": "iconos",
+    "file": "assets/iconos/L131 - REPRODUCTOR.png"
+  },
+  {
+    "id": "L132",
+    "name": "ESCUCHANDO MUSICA",
+    "category": "iconos",
+    "file": "assets/iconos/L132 - ESCUCHANDO MUSICA.png"
+  },
+  {
+    "id": "L133",
+    "name": "LOCA",
+    "category": "iconos",
+    "file": "assets/iconos/L133 - LOCA.png"
+  },
+  {
+    "id": "L135",
+    "name": "RAYO",
+    "category": "iconos",
+    "file": "assets/iconos/L135 - RAYO.png"
+  },
+  {
+    "id": "L135",
+    "name": "1 - LATIDOS",
+    "category": "iconos",
+    "file": "assets/iconos/L135-1 - LATIDOS.png"
+  },
+  {
+    "id": "L136",
+    "name": "GOOD VIBES",
+    "category": "iconos",
+    "file": "assets/iconos/L136 - GOOD VIBES.png"
+  },
+  {
+    "id": "L136",
+    "name": "1 - CASCOS",
+    "category": "iconos",
+    "file": "assets/iconos/L136-1 - CASCOS.png"
+  },
+  {
+    "id": "L139",
+    "name": "OSO ANGEL",
+    "category": "iconos",
+    "file": "assets/iconos/L139 - OSO ANGEL.png"
+  },
+  {
+    "id": "L142",
+    "name": "XOXO",
+    "category": "iconos",
+    "file": "assets/iconos/L142 - XOXO.png"
+  },
+  {
+    "id": "L143",
+    "name": "XOXO",
+    "category": "iconos",
+    "file": "assets/iconos/L143 - XOXO.png"
+  },
+  {
+    "id": "L158",
+    "name": "I LOVE COFFEE",
+    "category": "iconos",
+    "file": "assets/iconos/L158 - I LOVE COFFEE.png"
+  },
+  {
+    "id": "L159",
+    "name": "CAFE",
+    "category": "iconos",
+    "file": "assets/iconos/L159 - CAFE.png"
+  },
+  {
+    "id": "L160",
+    "name": "UN BUEN CAFE",
+    "category": "iconos",
+    "file": "assets/iconos/L160 - UN BUEN CAFE.png"
+  },
+  {
+    "id": "L161",
+    "name": "ESCUDO ARGENTINO",
+    "category": "iconos",
+    "file": "assets/iconos/L161 - ESCUDO ARGENTINO.png"
+  },
+  {
+    "id": "L162",
+    "name": "ANCHO DE ESPADAS",
+    "category": "iconos",
+    "file": "assets/iconos/L162 - ANCHO DE ESPADAS.png"
+  },
+  {
+    "id": "L164",
+    "name": "MADE IN ARGENTINA",
+    "category": "iconos",
+    "file": "assets/iconos/L164 - MADE IN ARGENTINA.png"
+  },
+  {
+    "id": "L165",
+    "name": "MATE FUTBOL ASADO",
+    "category": "iconos",
+    "file": "assets/iconos/L165 - MATE FUTBOL ASADO.png"
+  },
+  {
+    "id": "L167",
+    "name": "BUENOS AIRES",
+    "category": "iconos",
+    "file": "assets/iconos/L167 - BUENOS AIRES.png"
+  },
+  {
+    "id": "L168",
+    "name": "BUENOS AIRES",
+    "category": "iconos",
+    "file": "assets/iconos/L168 - BUENOS AIRES.png"
+  },
+  {
+    "id": "L169",
+    "name": "ARGENTINA",
+    "category": "iconos",
+    "file": "assets/iconos/L169 - ARGENTINA.png"
+  }
+]
